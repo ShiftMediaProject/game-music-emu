@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDLL|Win32">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDLL|x64">
+      <Configuration>DebugDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|Win32">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDLL|x64">
+      <Configuration>ReleaseDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTO|Win32">
+      <Configuration>ReleaseLTO</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseLTO|x64">
+      <Configuration>ReleaseLTO</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\gme\Ay_Apu.cpp" />
+    <ClCompile Include="..\gme\Ay_Cpu.cpp" />
+    <ClCompile Include="..\gme\Ay_Emu.cpp" />
+    <ClCompile Include="..\gme\Blip_Buffer.cpp" />
+    <ClCompile Include="..\gme\Classic_Emu.cpp" />
+    <ClCompile Include="..\gme\Data_Reader.cpp" />
+    <ClCompile Include="..\gme\Dual_Resampler.cpp" />
+    <ClCompile Include="..\gme\Effects_Buffer.cpp" />
+    <ClCompile Include="..\gme\Fir_Resampler.cpp" />
+    <ClCompile Include="..\gme\Gbs_Emu.cpp" />
+    <ClCompile Include="..\gme\Gb_Apu.cpp" />
+    <ClCompile Include="..\gme\Gb_Cpu.cpp" />
+    <ClCompile Include="..\gme\Gb_Oscs.cpp" />
+    <ClCompile Include="..\gme\gme.cpp" />
+    <ClCompile Include="..\gme\Gme_File.cpp" />
+    <ClCompile Include="..\gme\Gym_Emu.cpp" />
+    <ClCompile Include="..\gme\Hes_Apu.cpp" />
+    <ClCompile Include="..\gme\Hes_Cpu.cpp" />
+    <ClCompile Include="..\gme\Hes_Emu.cpp" />
+    <ClCompile Include="..\gme\Kss_Cpu.cpp" />
+    <ClCompile Include="..\gme\Kss_Emu.cpp" />
+    <ClCompile Include="..\gme\Kss_Scc_Apu.cpp" />
+    <ClCompile Include="..\gme\M3u_Playlist.cpp" />
+    <ClCompile Include="..\gme\Multi_Buffer.cpp" />
+    <ClCompile Include="..\gme\Music_Emu.cpp" />
+    <ClCompile Include="..\gme\Nes_Apu.cpp" />
+    <ClCompile Include="..\gme\Nes_Cpu.cpp" />
+    <ClCompile Include="..\gme\Nes_Fme7_Apu.cpp" />
+    <ClCompile Include="..\gme\Nes_Namco_Apu.cpp" />
+    <ClCompile Include="..\gme\Nes_Oscs.cpp" />
+    <ClCompile Include="..\gme\Nes_Vrc6_Apu.cpp" />
+    <ClCompile Include="..\gme\Nsfe_Emu.cpp" />
+    <ClCompile Include="..\gme\Nsf_Emu.cpp" />
+    <ClCompile Include="..\gme\Sap_Apu.cpp" />
+    <ClCompile Include="..\gme\Sap_Cpu.cpp" />
+    <ClCompile Include="..\gme\Sap_Emu.cpp" />
+    <ClCompile Include="..\gme\Sms_Apu.cpp" />
+    <ClCompile Include="..\gme\Snes_Spc.cpp" />
+    <ClCompile Include="..\gme\Spc_Cpu.cpp" />
+    <ClCompile Include="..\gme\Spc_Dsp.cpp" />
+    <ClCompile Include="..\gme\Spc_Emu.cpp" />
+    <ClCompile Include="..\gme\Spc_Filter.cpp" />
+    <ClCompile Include="..\gme\Vgm_Emu.cpp" />
+    <ClCompile Include="..\gme\Vgm_Emu_Impl.cpp" />
+    <ClCompile Include="..\gme\Ym2413_Emu.cpp" />
+    <ClCompile Include="..\gme\Ym2612_Emu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gme\Ay_Apu.h" />
+    <ClInclude Include="..\gme\Ay_Cpu.h" />
+    <ClInclude Include="..\gme\Ay_Emu.h" />
+    <ClInclude Include="..\gme\blargg_common.h" />
+    <ClInclude Include="..\gme\blargg_config.h" />
+    <ClInclude Include="..\gme\blargg_endian.h" />
+    <ClInclude Include="..\gme\blargg_source.h" />
+    <ClInclude Include="..\gme\Blip_Buffer.h" />
+    <ClInclude Include="..\gme\Classic_Emu.h" />
+    <ClInclude Include="..\gme\Data_Reader.h" />
+    <ClInclude Include="..\gme\Dual_Resampler.h" />
+    <ClInclude Include="..\gme\Effects_Buffer.h" />
+    <ClInclude Include="..\gme\Fir_Resampler.h" />
+    <ClInclude Include="..\gme\Gbs_Emu.h" />
+    <ClInclude Include="..\gme\Gb_Apu.h" />
+    <ClInclude Include="..\gme\Gb_Cpu.h" />
+    <ClInclude Include="..\gme\gb_cpu_io.h" />
+    <ClInclude Include="..\gme\Gb_Oscs.h" />
+    <ClInclude Include="..\gme\gme.h" />
+    <ClInclude Include="..\gme\Gme_File.h" />
+    <ClInclude Include="..\gme\Gym_Emu.h" />
+    <ClInclude Include="..\gme\Hes_Apu.h" />
+    <ClInclude Include="..\gme\Hes_Cpu.h" />
+    <ClInclude Include="..\gme\hes_cpu_io.h" />
+    <ClInclude Include="..\gme\Hes_Emu.h" />
+    <ClInclude Include="..\gme\Kss_Cpu.h" />
+    <ClInclude Include="..\gme\Kss_Emu.h" />
+    <ClInclude Include="..\gme\Kss_Scc_Apu.h" />
+    <ClInclude Include="..\gme\M3u_Playlist.h" />
+    <ClInclude Include="..\gme\Multi_Buffer.h" />
+    <ClInclude Include="..\gme\Music_Emu.h" />
+    <ClInclude Include="..\gme\Nes_Apu.h" />
+    <ClInclude Include="..\gme\Nes_Cpu.h" />
+    <ClInclude Include="..\gme\nes_cpu_io.h" />
+    <ClInclude Include="..\gme\Nes_Fme7_Apu.h" />
+    <ClInclude Include="..\gme\Nes_Namco_Apu.h" />
+    <ClInclude Include="..\gme\Nes_Oscs.h" />
+    <ClInclude Include="..\gme\Nes_Vrc6_Apu.h" />
+    <ClInclude Include="..\gme\Nsfe_Emu.h" />
+    <ClInclude Include="..\gme\Nsf_Emu.h" />
+    <ClInclude Include="..\gme\Sap_Apu.h" />
+    <ClInclude Include="..\gme\Sap_Cpu.h" />
+    <ClInclude Include="..\gme\sap_cpu_io.h" />
+    <ClInclude Include="..\gme\Sap_Emu.h" />
+    <ClInclude Include="..\gme\Sms_Apu.h" />
+    <ClInclude Include="..\gme\Sms_Oscs.h" />
+    <ClInclude Include="..\gme\Snes_Spc.h" />
+    <ClInclude Include="..\gme\Spc_Cpu.h" />
+    <ClInclude Include="..\gme\Spc_Dsp.h" />
+    <ClInclude Include="..\gme\Spc_Emu.h" />
+    <ClInclude Include="..\gme\Spc_Filter.h" />
+    <ClInclude Include="..\gme\Vgm_Emu.h" />
+    <ClInclude Include="..\gme\Vgm_Emu_Impl.h" />
+    <ClInclude Include="..\gme\Ym2413_Emu.h" />
+    <ClInclude Include="..\gme\Ym2612_Emu.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libgme.def" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{704AB765-90EE-4B99-9887-1B9ECFB7AB70}</ProjectGuid>
+    <RootNamespace>libgme</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\msvc32\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgmed</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgmed</TargetName>
+    <OutDir>..\..\..\msvc64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <OutDir>..\..\..\msvc32\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgmed</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgmed</TargetName>
+    <OutDir>..\..\..\msvc64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\msvc32\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgme</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">
+    <OutDir>..\..\..\msvc32\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgme</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgme</TargetName>
+    <OutDir>..\..\..\msvc64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'">
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgme</TargetName>
+    <OutDir>..\..\..\msvc64\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <OutDir>..\..\..\msvc32\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgme</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <IntDir>$(SolutionDir)\obj\$(Configuration)\$(Platform)\$(ProjectName)\</IntDir>
+    <TargetName>libgme</TargetName>
+    <OutDir>..\..\..\msvc64\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgme.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgme.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseLTO|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)\lib\$(TargetName)$(TargetExt)</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+    </Lib>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgme.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FloatingPointExceptions>false</FloatingPointExceptions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <DisableSpecificWarnings>4996;4146;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\bin\$(TargetName)$(TargetExt)</OutputFile>
+      <ProgramDatabaseFile>$(OutDir)\bin\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)\bin\$(TargetName).lib</ImportLibrary>
+      <ProfileGuidedDatabase>$(OutDir)\bin\$(TargetName).pgd</ProfileGuidedDatabase>
+      <ModuleDefinitionFile>libgme.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir $(OutDir)\include
+mkdir $(OutDir)\include\gme
+copy ..\gme\gme.h $(OutDir)\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist $(OutDir)\include\gme (
+rd /s /q $(OutDir)\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
