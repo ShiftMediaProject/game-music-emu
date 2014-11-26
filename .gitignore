@@ -6,15 +6,3 @@ deinstall.cmake
 install_manifest.txt
 *.cmake
 *.pc
-
-*.exe
-*.obj
-*.log
-*.tlog
-*.pdb
-*.ildb
-*.suo
-*.sdf
-[Oo]bj/
-!SMC/*.h
-
