@@ -4,7 +4,7 @@ project(libgme)
 include (CheckCXXCompilerFlag)
 
 # When version is changed, also change the one in gme/gme.h to match
-set(GME_VERSION 0.6.0 CACHE INTERNAL "libgme Version")
+set(GME_VERSION 0.6.1 CACHE INTERNAL "libgme Version")
 
 # 2.6+ always assumes FATAL_ERROR, but 2.4 and below don't.
 # Of course, 2.4 might work, in which case you're welcome to drop
@@ -81,10 +81,10 @@ if (CMAKE_COMPILER_IS_GNUCXX)
          endif()
       endif()
    endif() # test visibility
-endif (CMAKE_COMPILER_IS_GNUCXX)
 
-# Cache this result
-set( LIBGME_HAVE_GCC_VISIBILITY ${ENABLE_VISIBILITY} CACHE BOOL "GCC support for hidden visibility")
+    # Cache this result
+    set( LIBGME_HAVE_GCC_VISIBILITY ${ENABLE_VISIBILITY} CACHE BOOL "GCC support for hidden visibility")
+endif (CMAKE_COMPILER_IS_GNUCXX)
 
 # Shared library defined here
 add_subdirectory(gme)
