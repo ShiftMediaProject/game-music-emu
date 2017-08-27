@@ -351,15 +351,15 @@
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -369,8 +369,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -397,15 +397,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -415,8 +415,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -446,15 +446,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -464,8 +464,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -494,15 +494,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -512,8 +512,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -549,15 +549,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -567,8 +567,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -604,15 +604,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -622,8 +622,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -659,15 +659,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -677,8 +677,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -714,15 +714,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <SubSystem>Windows</SubSystem>
     </Lib>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -732,8 +732,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -770,15 +770,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <MinimumRequiredVersion>5.1</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -788,8 +788,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
@@ -826,15 +826,15 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <MinimumRequiredVersion>6.0</MinimumRequiredVersion>
     </Link>
     <PostBuildEvent>
-      <Command>mkdir $(OutDir)\include
-mkdir $(OutDir)\include\gme
-copy ..\gme\gme.h $(OutDir)\include\gme
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
     <PreBuildEvent>
-      <Command>if exist $(OutDir)\include\gme (
-rd /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
 cd ../
 cd $(ProjectDir)
 )</Command>
@@ -844,8 +844,8 @@ cd $(ProjectDir)
     </CustomBuildStep>
     <CustomBuildStep>
       <Outputs>force_clean</Outputs>
-      <Command>if exist $(OutDir)\include\gme (
-rmdir /s /q $(OutDir)\include\gme
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
 )
 if exist $(OutDir)\licenses\libgme.txt (
 del /f /q $(OutDir)\licenses\libgme.txt
