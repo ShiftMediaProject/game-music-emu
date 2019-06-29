@@ -1,0 +1,13 @@
+diff --git a/gme/Fir_Resampler.cpp b/gme/Fir_Resampler.cpp
+index 7a6600b..471443f 100644
+--- a/gme/Fir_Resampler.cpp
++++ b/gme/Fir_Resampler.cpp
+@@ -188,6 +188,8 @@ int Fir_Resampler_::skip_input( long count )
+ {
+ 	int remain = write_pos - buf.begin();
+ 	int max_count = remain - width_ * stereo;
++	if ( max_count < 0 )
++		return 0;
+ 	if ( count > max_count )
+ 		count = max_count;
+ 	
