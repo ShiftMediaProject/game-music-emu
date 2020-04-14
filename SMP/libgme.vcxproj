@@ -112,7 +112,7 @@
     <ClCompile Include="..\gme\Vgm_Emu.cpp" />
     <ClCompile Include="..\gme\Vgm_Emu_Impl.cpp" />
     <ClCompile Include="..\gme\Ym2413_Emu.cpp" />
-    <ClCompile Include="..\gme\Ym2612_Emu.cpp" />
+    <ClCompile Include="..\gme\Ym2612_Nuked.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\gme\Ay_Apu.h" />
@@ -170,6 +170,7 @@
     <ClInclude Include="..\gme\Vgm_Emu_Impl.h" />
     <ClInclude Include="..\gme\Ym2413_Emu.h" />
     <ClInclude Include="..\gme\Ym2612_Emu.h" />
+    <ClInclude Include="..\gme\Ym2612_Nuked.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="libgme.def" />
@@ -582,7 +583,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
@@ -598,6 +599,7 @@
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -626,7 +628,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
@@ -644,6 +646,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -672,7 +675,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
@@ -688,6 +691,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -716,7 +720,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
@@ -734,6 +738,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -762,7 +767,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
@@ -784,6 +789,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -812,7 +818,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <BufferSecurityCheck>true</BufferSecurityCheck>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
@@ -838,6 +844,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -866,7 +873,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
@@ -887,6 +894,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -915,7 +923,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <PreprocessorDefinitions>_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <MinimalRebuild>false</MinimalRebuild>
@@ -940,6 +948,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -975,7 +984,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -991,6 +1000,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1026,7 +1036,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x86\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -1044,6 +1054,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1079,7 +1090,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -1095,6 +1106,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1130,7 +1142,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <InterproceduralOptimization>SingleFile</InterproceduralOptimization>
       <ProgramDataBaseFileName>$(OutDir)\lib\x64\$(TargetName).pdb</ProgramDataBaseFileName>
@@ -1148,6 +1160,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1183,7 +1196,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0502;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
@@ -1205,6 +1218,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1240,7 +1254,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -1266,6 +1280,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1301,7 +1316,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <TreatSpecificWarningsAsErrors>4113;%(TreatSpecificWarningsAsErrors)</TreatSpecificWarningsAsErrors>
@@ -1323,6 +1338,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>
@@ -1358,7 +1374,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
       <OmitFramePointers>true</OmitFramePointers>
       <StringPooling>true</StringPooling>
-      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;NDEBUG;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -1384,6 +1400,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
       <Command>mkdir "$(OutDir)"\include
 mkdir "$(OutDir)"\include\gme
 copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
 mkdir $(OutDir)\licenses
 copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
     </PostBuildEvent>

@@ -34,7 +34,7 @@
 /* Like printf() except output goes to debug log file. Might be defined to do
  * nothing (not even evaluate its arguments).
  * void debug_printf( const char* format, ... ); */
-#if defined(__cplusplus) && defined(BLARGG_BUILD_DLL)
+#if defined(__cplusplus)
     static inline void blargg_dprintf_( const char* fmt_str, ... ) { (void) fmt_str; }
     #undef debug_printf
     #define debug_printf (1) ? (void) 0 : blargg_dprintf_

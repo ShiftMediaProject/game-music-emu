@@ -12,8 +12,6 @@ platform: x86+x64
 
 environment:
   matrix:
-  - MSVC_VER: 12
-    APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
   - MSVC_VER: 14
     APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
   - MSVC_VER: 15
