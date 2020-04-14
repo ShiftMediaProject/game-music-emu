@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	if ( argc >= 2 )
 		filename = argv[1];
 
-	long sample_rate = 44100; /* number of samples per second */
+	int sample_rate = 44100; /* number of samples per second */
 	/* index of track to play (0 = first) */
 	int track = argc >= 3 ? atoi(argv[2]) : 0;
 	
