@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{704AB765-90EE-4B99-9887-1B9ECFB7AB70}</ProjectGuid>
+    <ProjectGuid>{A04AB765-90EE-4B99-9887-1B9ECFB7AB70}</ProjectGuid>
     <RootNamespace>gme</RootNamespace>
   </PropertyGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="smp.props" />
+    <Import Project="smp_winrt.props" />
     <Import Project="libgme_files.props" />
   </ImportGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -42,7 +42,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugWinRT|x64'">
     <ClCompile>
       <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -76,44 +76,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4267;4244;4805;4146;4804;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-    <Link>
-      <ModuleDefinitionFile>libgme.def</ModuleDefinitionFile>
-    </Link>
-    <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-mkdir "$(OutDir)"\include\gme
-copy ..\gme\gme.h "$(OutDir)"\include\gme
-copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
-mkdir $(OutDir)\licenses
-copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
-    </PostBuildEvent>
-    <PreBuildEvent>
-      <Command>if exist "$(OutDir)"\include\gme (
-rd /s /q "$(OutDir)"\include\gme
-cd ../
-cd $(ProjectDir)
-)</Command>
-    </PreBuildEvent>
-    <CustomBuildStep>
-      <Message>Custom Clean Step</Message>
-    </CustomBuildStep>
-    <CustomBuildStep>
-      <Outputs>force_clean</Outputs>
-      <Command>if exist "$(OutDir)"\include\gme (
-rmdir /s /q "$(OutDir)"\include\gme
-)
-if exist $(OutDir)\licenses\libgme.txt (
-del /f /q $(OutDir)\licenses\libgme.txt
-)</Command>
-    </CustomBuildStep>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLL|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|Win32'">
     <ClCompile>
       <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -150,75 +113,7 @@ del /f /q $(OutDir)\licenses\libgme.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4267;4244;4805;4146;4804;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-    <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-mkdir "$(OutDir)"\include\gme
-copy ..\gme\gme.h "$(OutDir)"\include\gme
-copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
-mkdir $(OutDir)\licenses
-copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
-    </PostBuildEvent>
-    <PreBuildEvent>
-      <Command>if exist "$(OutDir)"\include\gme (
-rd /s /q "$(OutDir)"\include\gme
-cd ../
-cd $(ProjectDir)
-)</Command>
-    </PreBuildEvent>
-    <CustomBuildStep>
-      <Message>Custom Clean Step</Message>
-    </CustomBuildStep>
-    <CustomBuildStep>
-      <Outputs>force_clean</Outputs>
-      <Command>if exist "$(OutDir)"\include\gme (
-rmdir /s /q "$(OutDir)"\include\gme
-)
-if exist $(OutDir)\licenses\libgme.txt (
-del /f /q $(OutDir)\licenses\libgme.txt
-)</Command>
-    </CustomBuildStep>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4267;4244;4805;4146;4804;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-    <PostBuildEvent>
-      <Command>mkdir "$(OutDir)"\include
-mkdir "$(OutDir)"\include\gme
-copy ..\gme\gme.h "$(OutDir)"\include\gme
-copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
-mkdir $(OutDir)\licenses
-copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
-    </PostBuildEvent>
-    <PreBuildEvent>
-      <Command>if exist "$(OutDir)"\include\gme (
-rd /s /q "$(OutDir)"\include\gme
-cd ../
-cd $(ProjectDir)
-)</Command>
-    </PreBuildEvent>
-    <CustomBuildStep>
-      <Message>Custom Clean Step</Message>
-    </CustomBuildStep>
-    <CustomBuildStep>
-      <Outputs>force_clean</Outputs>
-      <Command>if exist "$(OutDir)"\include\gme (
-rmdir /s /q "$(OutDir)"\include\gme
-)
-if exist $(OutDir)\licenses\libgme.txt (
-del /f /q $(OutDir)\licenses\libgme.txt
-)</Command>
-    </CustomBuildStep>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|Win32'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDLLWinRT|x64'">
     <ClCompile>
       <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -255,7 +150,112 @@ del /f /q $(OutDir)\licenses\libgme.txt
 )</Command>
     </CustomBuildStep>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLL|x64'">
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4805;4146;4804;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
+)
+if exist $(OutDir)\licenses\libgme.txt (
+del /f /q $(OutDir)\licenses\libgme.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseWinRT|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4805;4146;4804;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
+)
+if exist $(OutDir)\licenses\libgme.txt (
+del /f /q $(OutDir)\licenses\libgme.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4805;4146;4804;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <ModuleDefinitionFile>libgme.def</ModuleDefinitionFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)"\include
+mkdir "$(OutDir)"\include\gme
+copy ..\gme\gme.h "$(OutDir)"\include\gme
+copy ..\gme\blargg_source.h "$(OutDir)"\include\gme
+mkdir $(OutDir)\licenses
+copy ..\license.txt $(OutDir)\licenses\libgme.txt</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>if exist "$(OutDir)"\include\gme (
+rd /s /q "$(OutDir)"\include\gme
+cd ../
+cd $(ProjectDir)
+)</Command>
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Custom Clean Step</Message>
+    </CustomBuildStep>
+    <CustomBuildStep>
+      <Outputs>force_clean</Outputs>
+      <Command>if exist "$(OutDir)"\include\gme (
+rmdir /s /q "$(OutDir)"\include\gme
+)
+if exist $(OutDir)\licenses\libgme.txt (
+del /f /q $(OutDir)\licenses\libgme.txt
+)</Command>
+    </CustomBuildStep>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDLLWinRT|x64'">
     <ClCompile>
       <PreprocessorDefinitions>VGM_YM2612_NUKED;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\;..\gme;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
